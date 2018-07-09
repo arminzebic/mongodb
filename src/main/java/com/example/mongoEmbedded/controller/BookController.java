@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class BookController {
 
     @Autowired
-    BookService bookService;
+    private BookService bookService;
 
     @RequestMapping(value = "", method = RequestMethod.POST)
     public ResponseEntity<Book> create(@RequestBody Book item) {

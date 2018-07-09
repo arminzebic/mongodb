@@ -9,6 +9,8 @@ public class Book {
     @Id
     private String id;
     private String name;
+    private String text;
+    private String writterId;
 
     public String getId() {
         return id;
@@ -24,5 +26,19 @@ public class Book {
 
     public void setName(String name) {
         this.name = name;
+    }
+    public String getWritterId() {
+        return writterId;
+    }
+
+    public void setWritterId(String writterId) {
+        this.writterId = writterId;
+    }
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 }
